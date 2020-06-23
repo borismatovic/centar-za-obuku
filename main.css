@@ -1,8 +1,8 @@
 
 :root {
   --primary-color: #BE1E2D;
-  --secondary-color: rgb(31, 179, 176);
-  --tertiary-color: rgb(34, 47, 62);
+  --secondary-color: #1fb3b0;
+  --tertiary-color: #222f3e;
   --text-light: #eee;
 
   --neutral-middle: #555;
@@ -949,4 +949,55 @@ margin-left: 2rem;
 
 .single-news-txt a:hover{
   border-bottom: 1px solid var(--neutral-warm);
+}
+
+
+
+/* * * * * * * * * * * * * * * * */
+
+/* SUCESS                        */
+
+/* * * * * * * * * * * * * * * * */
+
+.flex-success{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(34,47,62,1) 0%, rgba(34,193,195,1) 100%) no-repeat;
+}
+
+.success{
+  color: var(--neutral-middle);
+  background: var(--neutral-warm);
+  max-width: 60rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  animation: zoom .5s ease-in 1s;
+}
+
+.success-back{
+  padding-top: 2rem;
+}
+
+.success-link{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@keyframes zoom{
+  from{
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
