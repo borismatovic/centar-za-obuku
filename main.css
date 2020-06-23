@@ -644,7 +644,7 @@ margin-left: 2rem;
   }
 
   .form-container legend {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1rem;
   }
@@ -661,7 +661,8 @@ margin-left: 2rem;
 .form-container textarea{
 	border: none;
 	border-radius: var(--border-radius);
-	font-size: 1rem;
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
 	padding: 1rem;
 	margin-bottom: 2rem;
 	width: 100%;
