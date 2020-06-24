@@ -168,9 +168,29 @@
     <section class="registration">
         <div class="container">
             <div class="form-container" id="reg">
-                <h2 class="secondary-heading pb-4">Prijava za trening</h2>
+                <h2 class="secondary-heading pb-4 center">Prijava za trening</h2>
                 <form method="POST" data-netlify="true" action="./success.html">
                     <fieldset>
+                        <legend><span class="number">1</span>Podaci o kandidatu</legend>
+                        <div class="registration-fields">
+                            <div class="registration-field-wrapper"><label for="name">Ime i prezime<span
+                                        class="star">*</span></label>
+                                <input type="text" name="name" id="name" required></div>
+                            <div class="registration-field-wrapper"><label for="mail">E-mail<span
+                                        class="star">*</span></label>
+                                <input type="text" name="mail" id="mail" required></div>
+                            <div class="registration-field-wrapper"><label for="mob">Mobilni<span
+                                        class="star">*</span></label>
+                                <input type="text" name="mob" id="mob" required></div>
+                            <div class="registration-field-wrapper"><label for="job-type">Zanimanje<span
+                                        class="star">*</span></label>
+                                <input type="text" name="job-type" id="job-type" required></div>
+                        </div>
+                        <div class="registration-field-wrapper"><label for="company">Transportno preduzeće
+                                (opciono)</label>
+                            <input type="text" name="company" id="company"></div>
+                    </fieldset>
+                    <!-- <fieldset>
                         <legend><span class="number">1</span>Podaci o kandidatu</legend>
                         <label for="name">Ime i prezime<span class="star">*</span></label>
                         <input type="text" name="name" id="name" required>
@@ -182,10 +202,10 @@
                         <input type="text" name="company" id="company">
                         <label for="job-type">Zanimanje<span class="star">*</span></label>
                         <input type="text" name="job-type" id="job-type" required>
-                    </fieldset>
+                    </fieldset> -->
                     <fieldset>
                         <legend><span class="number">2</span>Napomena</legend>
-                        <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                        <textarea name="notes" id="notes" cols="30" rows="3"></textarea>
                     </fieldset>
                     <input type="submit" value="Prijavi se" />
                     <p class="note"><span class="star">*</span>Polja oznacena zvezdicom su obavezna.</p>
