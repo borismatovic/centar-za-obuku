@@ -81,6 +81,11 @@ html{
 
 .nav{
   border-bottom: var(--border) solid var(--primary-color);
+  
+  position: fixed;
+  width: 100%;
+  background: var(--neutral-warm);
+  z-index: 10;
 }
 
 .container{
@@ -97,7 +102,7 @@ html{
 
 .logo{
     margin-right: auto;
-    width: 30%;
+    width: 50%;
 }
 
 .nav-links{
@@ -183,11 +188,12 @@ html{
 
 
 .hero{
-    height: 85vh;
+    height: 100vh;
     background: linear-gradient(29deg, rgba(2,0,36,.75) 0%, rgba(31,179,176,.75) 50%, rgba(0,212,255,.75) 100%), url(./img/park-centar.jpg);
     background-size: cover;
-
     color: var(--text-light);
+    padding-top: 10vh;
+    
   }
   
   .container-hero{
@@ -197,14 +203,14 @@ html{
   .hero-heading{
     font-size: 7.5rem;
     font-weight: 300;
-    padding-top: 15rem;
+    padding: 10rem 0 5rem 0;
     text-shadow: .15rem .15rem .15rem var(--shadow-hover);
   }
   
   .hero-text{
     font-size: 3rem;
     font-weight: 300;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     text-shadow: .15rem .15rem .15rem var(--shadow-hover);
   }
 
@@ -244,8 +250,7 @@ html{
 
   .hero-heading{
     font-size: 6rem;
-    padding-top: 12rem;
-  }
+    padding: 8rem 0 4rem 0;  }
 
   .hero-text{
     font-size: 2.5rem;
@@ -253,7 +258,7 @@ html{
   }
 
   .cot-link a{
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
   }
 
 }
@@ -265,7 +270,7 @@ html{
   }
   
   .hero-heading{
-    padding-top: 6rem;
+    padding: 4rem 0 2rem 0;
   }
 }
 
@@ -277,7 +282,7 @@ html{
   }
 
   .hero-heading{
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     font-size: 4.25rem;
   }
   
@@ -290,8 +295,12 @@ html{
 }
 
 @media screen and (max-width: 500px){
+  .hero{
+    padding-top: 15vh;
+  }
+
   .hero-heading{
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     font-size: 3.75rem;
   }
   
@@ -300,20 +309,18 @@ html{
   }
 
   .cot-link{
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 
-  /* .cot-link a{
-    padding: .75rem 3rem;
-    font-size: 1.5rem;
-    font-weight: 300;
+  .cot-link a{
     letter-spacing: 0;
-  } */
+  }
 }
 
 @media screen and (max-width: 400px){
+  
   .hero-heading{
-    padding-top: 2rem;
+    padding: 1em 0;
     font-size: 3rem;
   }
   
@@ -957,6 +964,7 @@ margin-left: 3rem;
 .news-page{
   color: var(--neutral-middle);
   padding: 7.5rem 0;
+  padding: calc(15vh + 7.5rem) 0 7.5rem 0;
 }
 
 .single-news{
