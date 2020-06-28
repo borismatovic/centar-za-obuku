@@ -316,17 +316,22 @@ html{
   .cot-link a{
     letter-spacing: 0;
   }
+
+  .arrow{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 400px){
   
   .hero-heading{
     padding: 1em 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .hero-text{
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
 }
