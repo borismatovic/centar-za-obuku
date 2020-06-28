@@ -128,12 +128,13 @@ html{
     font-weight: 400;
   }
 
-.nav-links li a.active{
-  color: var(--secondary-color);
-}
-  
-.nav-links li a:hover,
-.nav-links li a:active{
+  .nav-links li a:hover,
+  .nav-links li a:active,
+  .navi-link li a:focus{
+    color: var(--secondary-color);
+  }
+
+  .nav-links li a.active{
     color: var(--secondary-color);
   }
 
@@ -342,6 +343,14 @@ html{
   color: var(--neutral-middle);
 }
 
+.about-us-img{
+  padding-bottom: 7.5rem;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  column-span: all;
+}
   .about-us-heading{
     column-span: all;
   }
@@ -613,12 +622,8 @@ html{
 }
 
 .single-logo{
-  width: 100%;
+  width: 90%;
   object-fit: cover;
-}
-
-.single-logo + .single-logo{
-margin-left: 3rem;
 }
 
 @media screen and (max-width: 1000px) {
