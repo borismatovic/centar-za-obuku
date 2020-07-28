@@ -349,15 +349,19 @@ html{
   column-rule: .1rem solid var(--secondary-color);
   color: var(--neutral-middle);
 }
+  .about-us-img-wrapper{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   column-span: all;
+   padding-bottom: 5rem;;
+  }
 
-.about-us-img{
-  padding-bottom: 7.5rem;
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-  column-span: all;
-}
+  .about-us-img{
+    object-fit: cover;
+    width: 25%;
+  }
+  
   .about-us-heading{
     column-span: all;
   }
@@ -391,7 +395,8 @@ html{
   }
 
   @media screen and (max-width: 1000px) {
-    .video-wrapper{
+    .video-wrapper,
+    .about-us-img-wrapper{
       display: none;
     }
   }
