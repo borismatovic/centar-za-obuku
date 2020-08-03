@@ -973,8 +973,9 @@ html{
 /* * * * * * * * * * * * * * * * */
 
 .news-background{
-  background: linear-gradient(29deg, rgba(2,0,36,.75) 0%, rgba(31,179,176,.75) 50%, rgba(0,212,255,.75) 100%), url(./img/park-centar.jpg);
-  background-size: cover;
+  background: linear-gradient(29deg, rgba(2,0,36,.75) 0%, rgba(31,179,176,.75) 50%, rgba(0,212,255,.75) 100%);
+  /* background: linear-gradient(29deg, rgba(2,0,36,.75) 0%, rgba(31,179,176,.75) 50%, rgba(0,212,255,.75) 100%), url(./img/park-centar.jpg); */
+  /* background-size: cover; */
   min-height: 100vh;
 }
 
@@ -1024,6 +1025,16 @@ html{
 .single-news-txt{
   font-size: 1.8rem;
   line-height: 150%;
+}
+
+.single-news-list{
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.single-news-list-item{
+  padding-bottom: 1rem;
 }
 
 .single-news-txt a{
