@@ -1027,6 +1027,12 @@ html{
   line-height: 150%;
 }
 
+.single-news-video{
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 .single-news-list{
   font-size: 1.6rem;
   margin-left: 2rem;
