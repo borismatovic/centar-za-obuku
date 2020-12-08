@@ -2,6 +2,7 @@
 :root {
   --primary-color: #BE1E2D;
   --secondary-color: #1fb3b0;
+  --secondary-color-light: hsl(179, 70%, 71%);
   --tertiary-color: #222f3e;
   --text-light: #eee;
 
@@ -14,6 +15,8 @@
 
   --border: 4px;
   --border-radius: .3rem;
+
+  --nav-height: 10rem;
 }
 
 
@@ -43,6 +46,21 @@ html{
   text-transform: uppercase;
 }
 
+.tertiary-heading{
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 1.5rem 0 1.5rem 0;
+  color: var(--neutral-middle);
+  text-transform: uppercase;
+}
+
+.quaternary-heading{
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 2.5rem 0 1.5rem 0;
+  color: var(--neutral-middle);
+}
+
 .pb-4{
   padding-bottom: 6rem;
 }
@@ -50,6 +68,8 @@ html{
 .pt-1{
   padding-top: 1rem;
 }
+
+
 
 .inline-block{
   display: inline-block;
@@ -60,6 +80,11 @@ html{
   text-transform: uppercase;
   font-weight: 700;
   font-style: normal;
+}
+
+.emphasize-text-secondary{
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 .emphasize-link{
@@ -77,7 +102,34 @@ html{
 .link-wrapper{
   padding-bottom: 2rem;
 }
- 
+
+.note-text{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+  font-style: italic;
+  padding-bottom: .5rem;
+}
+
+a{
+  cursor: pointer;
+}
+
+.classes{
+  padding: 20rem 0 10rem 0;
+  font-size: 1.6rem;
+}
+
+.classes-text{
+  padding: .8rem 0;
+}
+
+@media screen and (max-width: 675px) {
+  .wrapper{
+    padding: 0 4rem;
+  }
+}
+
 /* * * * * * * * *  */
 /* NAVIGATION */
 
@@ -113,30 +165,66 @@ html{
     align-items: center;
   }
 
-.nav-links li{
+.nav-link{
     padding: 0 2rem;
     font-size: 1.8rem;
     list-style-type: none;
     text-transform: uppercase;
+    position: relative;
   }
   
-.nav-links li + li{
+.nav-link + .nav-link{
     border-left: 2px solid var(--neutral-middle);
   }
   
-.nav-links li a{
+.nav-link a{
     color: var(--neutral-middle);
     text-decoration: none;
     font-weight: 400;
   }
 
-  .nav-links li a:hover,
-  .nav-links li a:active,
-  .navi-link li a:focus{
+  .nav-link a:hover,
+  .nav-link a:active,
+  .navi-lin a:focus{
     color: var(--secondary-color);
   }
 
-  .nav-links li a.active{
+  .nav-link a.active{
+    color: var(--secondary-color);
+  }
+
+  .nav-link a.disabled{
+    pointer-events:none;
+    color: var(--neutral-dark);
+  }
+
+  .sub-nav-links{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2rem;
+    z-index: 10;
+    background-color: var(--neutral-warm);
+    color: var(--neutral-middle);
+    /* width: 100%; */
+  }
+
+  .nav-link:hover .sub-nav-links{
+    display: block;
+  }
+
+  .sub-nav-link{
+    padding: 1rem 2rem;
+    list-style-type: none;
+  }
+
+  .sub-nav-link:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color-light);
+  }
+
+  .sub-nav-link a.active{
     color: var(--secondary-color);
   }
 
@@ -156,7 +244,7 @@ html{
     max-width: 60rem;
   }
    
-  .nav-links li{
+  .nav-link{
     padding: 0 1rem;
     font-size: 1.5rem;
     list-style-type: none;
@@ -179,7 +267,7 @@ html{
       margin: 1.5rem auto;
     }
 
-    .nav-links li{
+    .nav-link{
       padding: 0 .75rem;
       margin: 1.5rem 0;
       font-size: 1.5rem;
@@ -195,7 +283,7 @@ html{
     background: linear-gradient(29deg, rgba(2,0,36,.75) 0%, rgba(31,179,176,.75) 50%, rgba(0,212,255,.75) 100%), url(./img/park-centar.jpg);
     background-size: cover;
     color: var(--text-light);
-    padding-top: 10vh;
+    padding-top: var(--nav-height);
     
   }
   
@@ -1160,4 +1248,58 @@ html{
   .success-back{
     padding-top: 5rem;
   }
+  }
+
+
+  /* * * * * * * * * * * * * * * * */
+
+/* CURRICULUM                     */
+
+/* * * * * * * * * * * * * * * * */
+
+  .curriculum-list-items{
+    padding: 0 0 0 1.5rem;
+    list-style-type: none;
+  }
+  .curriculum-list-item{
+    padding: 1rem 0;
+  }
+
+  .curriculum-list-item2{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    padding-top: .75rem;
+    color:var(--neutral-middle);
+  }
+
+  .py-0{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .curriculum-text-wrapper{
+    padding: 0 5rem;
+  }
+
+  .trening-list-item{
+    padding: .75rem 0;
+  }
+
+  .classes-list{
+    margin-left: 2rem;
+  }
+
+  .list-item,
+  .list-item2{
+    padding-top: 1rem;
+  }
+
+  .list-item2{
+    padding-left: .5rem;
+    margin-left: 2rem;
   }
