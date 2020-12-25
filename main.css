@@ -463,18 +463,15 @@ a{
 
   .video-wrapper{
     width: 1024px;
+    width: auto;
     margin: 0 auto;
     margin-bottom: 7.5rem;
     text-align: center;
   }
 
-  .video{
-    overflow: hidden;
-    object-fit: cover;
-    width: 1024px;
-    height: 576px;
-    border: .1rem solid var(--neutral-middle);
-    border-radius: var(--border-radius);
+  video{
+    width: 100%    !important;
+    height: auto   !important;
   }
 
   .video-title{
@@ -484,14 +481,9 @@ a{
     padding-top: 1.5rem;
   }
 
-  @media screen and (max-width: 1000px) {
-    .video-wrapper,
-    .about-us-img-wrapper{
-      display: none;
-    }
-  }
-  
-  /* CARDS */
+  /* * * * * * * */
+  /* * CARDS * * */
+  /* * * * * * * */
 
   .cards{
     display: flex;
@@ -508,8 +500,7 @@ a{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);   
   }
-  
-  
+    
   .card p{
     font-size: 1.5rem;
     color: var(--neutral-middle);
